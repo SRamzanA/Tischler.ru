@@ -1,0 +1,254 @@
+<!Doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/style.css">
+    <title>T.I.S.C.H.L.E.R.</title>
+</head>
+<body>
+    <nav>
+        <div class="logot">
+            <a href="#logo"><img src="{{ url_for('static', filename='logo.jpg') }}" alt="logo"
+                             width="70px" height="70px"></a>
+        </div>
+        <div id="logo" class="popup">
+            <a href="#" class="popup_close_a"></a>
+            <div class="popup_body">
+                <div class="popup_content">
+                    <a href="#" class="popup_close">X</a>
+                    <div class="popup_title"></div>
+                    <div class="popup_text">
+                        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="logo"
+                             width="500px" height="500px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul>
+            <li><a href="" style="color: orange;">T.I.S.C.H.L.E.R.</a></li>
+            <li><a href="/">Главная</a></li>
+            <li><a href="#popup">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="head">
+        <br><br><br><br><br><br><br><br>
+        <div class="head_text">
+            <p><b>Мастерская TISCHLER <br>
+            Мебель и декор на заказ</b></p> <!-- шрифт проще -->
+        </div>
+    </div>
+
+    <div class="con">
+        <div class="content">
+
+            <br><br><br><br><br>
+
+            <div class="abaut">
+                <h1 class="color_title">О НАС</h1>
+                <div class="about_my">
+                    <div class="my_image">
+                        <img src="{{ url_for('static', filename='logo.jpg') }}"
+                             alt="" width="430px" height="400px">
+                    </div>
+
+                    <div class="about_my_about_text">
+                        <h2 class="color_title">TISCHLER</h2>
+                        <p>Современная столярная мастерская которую основал <b>Смайлов Тимур</b></p>
+                        <p>Мастерская занимается реставрацией, ремонтом, изготовлением мебели и декором для
+                            дома и не только по индивидуальным проектам.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="space20"></div>
+
+            <div class="advan">
+                <h1 class="color_title">НАШИ ПРЕЙМУЩЕСТВА</h1>
+                <div class="advan_text">
+                    <h2><b>Проектирование</b></h2>
+                    <p>Воплощаем ваш дизайн проект и создаём свои по вашим идеям и потребностям</p>
+                    <p>Учитываем требования по функционалу и конструктиву мебели</p>
+                    <p>Не боимся экспериментировать</p>
+                    <br><br><br>
+                    <h2><b>Производство</b></h2>
+                    <p>У нас нет конвейера, с каждой деталью мастер работает отдельно</p>
+                    <p>Используем ресурс заказчика по возможности</p>
+                    <p>Всю мебель привезём и смонтируем сами</p>
+                    <br><br><br>
+                    <h2><b>Синтез технологии стиля и простоты</b></h2>
+                    <p>Работаем с любым декором от листовых материалов до массива дерева</p>
+                    <p>Подбераем цвет и изготовим авторскую фрезеровку</p>
+                    <p>Оргонизовываем простой доступ к сложным пространствам</p>
+                    <br><br>
+                </div>
+            </div>
+
+
+            <div class="space20"></div>
+            <br><br><br>
+
+            <div class="about_work_local">
+                 <h1 class="color_title">ГАЛЕРЕЯ РАБОТ</h1>
+                <div class="container-right">
+                    <div class="about_work">
+                        <p>Гардеробная мебель</p>
+                        <a href="#img1"><img src="{{ url_for('static', filename='photo1.jpg') }}" alt="Фото работы"
+                                                 width="200vw" height="200vw"></a>
+                    </div>
+
+                    <div id="img1" class="popup">
+                        <a href="#" class="popup_close_a"></a>
+                        <div class="popup_body">
+                            <div class="popup_content">
+                                <a href="#" class="popup_close">X</a>
+                                <div class="popup_title"></div>
+                                <div class="popup_text">
+                                    <img src="{{ url_for('static', filename='photo1.jpg') }}" alt="Фото работы"
+                                            width="500px" height="500px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about_work">
+                        <p>Шкафы</p>
+                        <a href="#img2"><img src="{{ url_for('static', filename='photo2.jpg') }}" alt="Фото работы"
+                                             width="200px" height="200px"></a>
+                    </div>
+
+                    <div id="img2" class="popup">
+                        <a href="#" class="popup_close_a"></a>
+                        <div class="popup_body">
+                            <div class="popup_content">
+                                <a href="#" class="popup_close">X</a>
+                                <div class="popup_title"></div>
+                                <div class="popup_text">
+                                    <img src="{{ url_for('static', filename='photo2.jpg') }}" alt="Фото работы"
+                                            width="500px" height="500px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container-left">
+                    <div class="about_work">
+                        <p>Разделочная доски</p>
+                        <a href="#img3"><img src="{{ url_for('static', filename='photo3.jpg') }}" alt="Фото работы"
+                                              width="200px" height="200px"></a>
+                    </div>
+
+                    <div id="img3" class="popup">
+                        <a href="#" class="popup_close_a"></a>
+                        <div class="popup_body">
+                            <div class="popup_content">
+                                <a href="#" class="popup_close">X</a>
+                                <div class="popup_title"></div>
+                                <div class="popup_text">
+                                    <img src="{{ url_for('static', filename='photo3.jpg') }}" alt="Фото работы"
+                                            width="500px" height="500px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about_work">
+                        <p>Кровати</p>
+                        <a href="#bed_photo"><img src="{{ url_for('static', filename='bed_photo.jpg') }}" alt="Фото работы"
+                                                 width="280px" height="150px"></a>
+                    </div>
+
+                    <div id="bed_photo" class="popup">
+                        <a href="#" class="popup_close_a"></a>
+                        <div class="popup_body">
+                            <div class="popup_content">
+                                <a href="#" class="popup_close">X</a>
+                                <div class="popup_title"></div>
+                                <div class="popup_text">
+                                    <div class="img2">
+                                        <img src="{{ url_for('static', filename='bed_photo.jpg') }}" alt="Фото работы"
+                                            width="800px" height="500px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about_work">
+                        <p>Столы</p>
+                        <a href="#TableForTwo"><img src="{{ url_for('static', filename='TableForTwo.jpg') }}" alt="Фото работы"
+                        width="280px" height="150px"></a>
+                    </div>
+
+                    <div id="TableForTwo" class="popup">
+                        <a href="#" class="popup_close_a"></a>
+                        <div class="popup_body">
+                            <div class="popup_content">
+                                <a href="#" class="popup_close">X</a>
+                                <div class="popup_title"></div>
+                                <div class="popup_text">
+                                    <div class="img2">
+                                        <img src="{{ url_for('static', filename='TableForTwo.jpg') }}" alt="Фото работы"
+                                            width="800px" height="500px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- container-left -->
+            </div> <!-- about_work_local -->
+
+            <div class="space20"></div>
+
+            <div class="why_iis">
+                <h1 class="color_title">ПОЧЕМУ ИМЕННО МЫ</h1>
+                <div class="why_it_is_as">
+                    <p>Мы предлагаем уникальную возможность заказать дизайнерскую мебель,
+                        которая полностью отразит ваш стиль и предпочтения.
+                Наша команда профессиональных дизайнеров и мастеров сделает все возможное, чтобы воплотить ваши идеи в реальность.
+                Каждая деталь, каждая линия и каждый материал будут тщательно подобраны, чтобы создать впечатляющий и функциональный
+                  интерьер. Заказывая у нас, вы получаете не только качественную
+                 дизайнерскую мебель, но и незабываемый опыт сотрудничества. Откройте новые горизонты в дизайне своего дома с нашей
+                  дизайнерской мебелью на заказ. Воплотите свои мечты в реальность и создайте пространство, которое будет отражать
+                  вашу индивидуальность. Доверьте нам свой проект и наслаждайтесь результатом</p>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="space20"></div>
+
+            <div class="podwal">
+                <div class="podwal_content">
+                    <div class="podwal_text">
+                        <p>© г. Новосибирск <a href="/">© 2023 Смайлов Тимур</a></p>
+                        <p>Разработчик сайта: <a href="#">Смайлов Рамзан</a></p>
+                     </div>
+                </div>
+            </div>
+
+        </div> <!-- Закрытие контейнера .Content -->
+    </div> <!-- Закрытие контейнера con -->
+
+    <div id="popup" class="popup">
+        <a href="#" class="popup_close_a"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#" class="popup_close">X</a>
+                <div class="popup_title"></div>
+                <div class="popup_text">
+                    WhatsApp: <a href="https://wa.me/79538615845">+7 953 861-58-45</a> <br>
+                    vk: <a href="https://vk.me/id651013208">https://vk.me/id651013208</a> <br>
+                    Эл.почта: <a href="mailto:Sofia.ash.98@gmail.com">Sofia.ash.98@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
