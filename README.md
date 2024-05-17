@@ -1,2 +1,1 @@
-# Tischler.ru
-the code used on the T.I.S.C.H.L.E.R. website
+Файлы старого сайта столярной компании TISCHLER. сервером выступает flask на python. 
